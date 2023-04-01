@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+
+    <div class="overlay">
+        <div>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h3>Please enter the title.</h3>
+                <input type="text" id="title-task" autofocus>
+    
+                <h3 class="last">Please enter the description.</h3>
+                <textarea name="" id="description" cols="40" rows="10"></textarea>
+
+                <div>
+                    <button id="done-btn">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>ToDo List</h1>
+    </div>
+    <div class="container" id="contain-parent">
+        <div class="butns">
+            <div class="btn">
+                <button id="add" class="button">Add Task <b>+</b></button>
+            </div>
+
+            <div class="btn">
+                <button id="delete" class="button">Delete All</button>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div id="tasks">
+                <div class="task">
+                    <div>
+                        <h2>task one</h2>
+                        <span><i class="fa-regular fa-calendar-days"></i> 10/10/2020</span>
+                        <p id="description"></p>
+                    </div>
+                    <div>
+                        <h4>Finished <i class="fa-solid fa-check"></i></h4>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <i class="fa-solid fa-fill-drip"></i>
+                        <div class="changeColor">
+                            <span data-color="yellow" class="color-1 active ">j</span>
+                            <span data-color="green" class="color-2">j</span>
+                            <span data-color="gray" class="color-3">j</span>
+                            <span data-color="yellow" class="color-4">j</span>
+                            <span data-color="blueviolet" class="color-5">j</span>
+                            <span data-color="chocolate" class="color-6">j</span>
+                            <span data-color="crimson" class="color-7">j</span>
+                            <span data-color="cadetblue" class="color-8">j</span>
+                        </div>
+                    
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
